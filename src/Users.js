@@ -11,7 +11,6 @@ function Users() {
       <h1>Hey There from new file</h1>
       <Apple />
       {Apple()}
-      <h1>Hey There from new file</h1>
     </div>
   );
 }

@@ -1,13 +1,30 @@
 import logo from "./logo.svg";
 import Users from "./Users";
 import "./App.css";
+import PropEg from "./PropEg";
 
 function App() {
+  let name = "Peter";
+  function Apple() {
+    name = "Sahil";
+    alert("clicked");
+  }
+
   return (
     <div className="App">
-      <h1>Here</h1>
+      <h1>Here {2 * 2}</h1>
       <Users />
-      <h1>Here</h1>
+      <button onClick={Apple}>Click me</button>
+      <button onClick={() => alert("hello")}>Click me</button>
+      <button
+        onClick={function () {
+          alert("hello");
+        }}
+      >
+        Click me
+      </button>
+      <PropEg />
+      <h3>{name}</h3>
     </div>
   );
 }

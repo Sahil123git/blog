@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Users from "./Users";
-import ClassComp  from "./ClassComp";
+import StateEg from "./StateEg";
+import ClassComp from "./ClassComp";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,6 +14,7 @@ root.render(
     <App />
     <Users />
     <ClassComp />
+    <StateEg></StateEg>
     <h1>There</h1>
   </React.StrictMode>
 );
